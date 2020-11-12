@@ -1,5 +1,7 @@
-package com.codermonkeys.forecastapp.data.response
+package com.codermonkeys.forecastapp.data.network.response
 
+import com.codermonkeys.forecastapp.data.db.entity.CurrentWeatherEntry
+import com.codermonkeys.forecastapp.data.db.entity.Location
 import com.google.gson.annotations.SerializedName
 
 

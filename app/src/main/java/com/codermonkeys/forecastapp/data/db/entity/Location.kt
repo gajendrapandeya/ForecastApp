@@ -1,4 +1,4 @@
-package com.codermonkeys.forecastapp.data.response
+package com.codermonkeys.forecastapp.data.db.entity
 
 
 import com.google.gson.annotations.SerializedName
