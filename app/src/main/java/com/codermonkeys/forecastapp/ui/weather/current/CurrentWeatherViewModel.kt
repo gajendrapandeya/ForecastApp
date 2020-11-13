@@ -1,15 +1,17 @@
 package com.codermonkeys.forecastapp.ui.weather.current
 
 import androidx.lifecycle.ViewModel
+import com.codermonkeys.forecastapp.data.providers.UnitProvider
 import com.codermonkeys.forecastapp.data.repository.ForecastRepository
 import com.codermonkeys.forecastapp.internal.UnitSystem
 import com.codermonkeys.forecastapp.internal.lazyDeferred
 
 class CurrentWeatherViewModel(
-    private val forecastRepository: ForecastRepository
+    private val forecastRepository: ForecastRepository,
+    val unitProvider: UnitProvider
 ) : ViewModel() {
 
-    private val unitSystem = UnitSystem.METRIC//get from Settings later
+    private val unitSystem = unitProvider.getUnitSystem()
 
     val isMetric: Boolean
     get() = unitSystem == UnitSystem.METRIC
