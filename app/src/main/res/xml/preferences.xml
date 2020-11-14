@@ -20,12 +20,12 @@
 
     <PreferenceCategory android:title="Units">
         <ListPreference
-            android:key="UNIT_SYSTEM"
-            android:title="Unit System"
-            android:summary="%s"
             android:defaultValue="METRIC"
             android:entries="@array/unitSystemEntry"
-            android:entryValues="@array/unitSystemValues"/>
+            android:entryValues="@array/unitSystemValues"
+            android:key="UNIT_SYSTEM"
+            android:summary="%s"
+            android:title="Unit System" />
     </PreferenceCategory>
 
 
