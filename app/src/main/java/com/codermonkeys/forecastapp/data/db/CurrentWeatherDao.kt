@@ -7,8 +7,8 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.codermonkeys.forecastapp.data.db.entity.CURRENT_WEATHER_ID
 import com.codermonkeys.forecastapp.data.db.entity.CurrentWeatherEntry
-import com.codermonkeys.forecastapp.data.db.unitlocalized.ImperialCurrentWeatherEntry
-import com.codermonkeys.forecastapp.data.db.unitlocalized.MetricCurrentWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.current.ImperialCurrentWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.current.MetricCurrentWeatherEntry
 
 @Dao
 interface CurrentWeatherDao {

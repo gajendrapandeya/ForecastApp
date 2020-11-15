@@ -5,7 +5,7 @@ import androidx.lifecycle.LiveData
 import com.codermonkeys.forecastapp.data.db.CurrentWeatherDao
 import com.codermonkeys.forecastapp.data.db.WeatherLocationDao
 import com.codermonkeys.forecastapp.data.db.entity.WeatherLocation
-import com.codermonkeys.forecastapp.data.db.unitlocalized.UnitSpecificCurrentWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.current.UnitSpecificCurrentWeatherEntry
 import com.codermonkeys.forecastapp.data.network.WeatherNetworkDataSource
 import com.codermonkeys.forecastapp.data.network.response.CurrentWeatherResponse
 import com.codermonkeys.forecastapp.data.providers.LocationProvider

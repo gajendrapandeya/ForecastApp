@@ -1,4 +1,4 @@
-package com.codermonkeys.forecastapp.data.db.unitlocalized
+package com.codermonkeys.forecastapp.data.db.unitlocalized.current
 
 import androidx.room.ColumnInfo
 
