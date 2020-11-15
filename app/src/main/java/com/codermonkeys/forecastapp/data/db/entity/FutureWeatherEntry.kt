@@ -12,9 +12,7 @@ data class FutureWeatherEntry(
     @PrimaryKey(autoGenerate = true)
     val id: Int? = null,
     val date: String,
-    @SerializedName("date_epoch")
-//    val dateEpoch: Int,
     @Embedded()
-    val day: Day,
+    val day: Day
 //    val hour: List<Hour>
 )

@@ -37,6 +37,10 @@ android {
     }
 }
 
+androidExtensions {
+    experimental = true
+}
+
 dependencies {
 
     implementation "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
@@ -105,6 +109,4 @@ dependencies {
 
     //multidex
     implementation 'com.android.support:multidex:1.0.3'
-
-
 }

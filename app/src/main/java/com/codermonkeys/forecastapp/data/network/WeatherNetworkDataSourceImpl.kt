@@ -7,7 +7,7 @@ import com.codermonkeys.forecastapp.data.network.response.CurrentWeatherResponse
 import com.codermonkeys.forecastapp.data.network.response.FutureWeatherResponse
 import com.codermonkeys.forecastapp.internal.NoConnectivityException
 
-const val FORECAST_DAYS_COUNT = 7
+const val FORECAST_DAYS_COUNT = 0
 
 class WeatherNetworkDataSourceImpl(
     private val apixuWeatherApiService: ApixuWeatherApiService
