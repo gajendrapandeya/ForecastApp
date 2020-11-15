@@ -4,3 +4,4 @@ import java.io.IOException
 
 class NoConnectivityException: IOException()
 class LocationPermissionNotGrantedPermission: IOException()
+class DateNotFoundException : IOException()

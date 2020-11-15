@@ -6,8 +6,10 @@ import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import com.codermonkeys.forecastapp.data.db.entity.FutureWeatherEntry
-import com.codermonkeys.forecastapp.data.db.unitlocalized.future.ImperialSimpleFutureWeatherEntry
-import com.codermonkeys.forecastapp.data.db.unitlocalized.future.MetricSimpleFutureWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.future.detail.ImperialDetailFutureWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.future.detail.MetricDetailFutureWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.future.list.ImperialSimpleFutureWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.future.list.MetricSimpleFutureWeatherEntry
 import org.threeten.bp.LocalDate
 
 @Dao
@@ -21,6 +23,12 @@ interface FutureWeatherDao {
 
     @Query("SELECT * FROM future_weather WHERE date(date) >= date(:startDate)")
     fun getSimpleWeatherForecastImperial(startDate: LocalDate): LiveData<List<ImperialSimpleFutureWeatherEntry>>
+
+    @Query("SELECT * FROM future_weather WHERE date(date) == date(:date)")
+    fun getDetailedWeatherByDateMetric(date: LocalDate): LiveData<MetricDetailFutureWeatherEntry>
+
+    @Query("SELECT * FROM future_weather WHERE date(date) == date(:date)")
+    fun getDetailedWeatherByDateImperial(date: LocalDate): LiveData<ImperialDetailFutureWeatherEntry>
 
     @Query("SELECT count(id) FROM future_weather WHERE date(date) >= date(:startDate) ")
     fun countFutureWeather(startDate: LocalDate): Int

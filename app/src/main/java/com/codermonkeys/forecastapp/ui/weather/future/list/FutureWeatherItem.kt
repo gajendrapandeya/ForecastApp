@@ -1,8 +1,8 @@
 package com.codermonkeys.forecastapp.ui.weather.future.list
 
 import com.codermonkeys.forecastapp.R
-import com.codermonkeys.forecastapp.data.db.unitlocalized.future.MetricSimpleFutureWeatherEntry
-import com.codermonkeys.forecastapp.data.db.unitlocalized.future.UnitSpecificSimpleFutureWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.future.list.MetricSimpleFutureWeatherEntry
+import com.codermonkeys.forecastapp.data.db.unitlocalized.future.list.UnitSpecificSimpleFutureWeatherEntry
 import com.codermonkeys.forecastapp.internal.glide.GlideApp
 import com.xwray.groupie.kotlinandroidextensions.Item
 import com.xwray.groupie.kotlinandroidextensions.ViewHolder
